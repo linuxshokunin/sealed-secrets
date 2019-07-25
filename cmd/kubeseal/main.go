@@ -42,7 +42,7 @@ var (
 	certFile       = flag.String("cert", "", "Certificate / public key to use for encryption. Overrides --controller-*")
 	controllerNs   = flag.String("controller-namespace", metav1.NamespaceSystem, "Namespace of sealed-secrets controller.")
 	controllerName = flag.String("controller-name", "sealed-secrets-controller", "Name of sealed-secrets controller.")
-	outputFormat   = flag.String("format", "json", "Output format for sealed secret. Either json or yaml")
+	outputFormat   = flag.String("format", "yaml", "Output format for sealed secret. Either json or yaml")
 	rotate         = flag.Bool("rotate", false, "Re-encrypt the given sealed secret to use the latest cluster key.")
 	dumpCert       = flag.Bool("fetch-cert", false, "Write certificate to stdout. Useful for later use with --cert")
 	printVersion   = flag.Bool("version", false, "Print version information and exit")
